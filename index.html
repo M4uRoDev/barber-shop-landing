@@ -13,10 +13,6 @@
 </head>
 <body>
 
-<div class="topbar">
-  <p>☕ Café de cortesía en cada visita &nbsp;·&nbsp; Agenda tu hora por WhatsApp</p>
-</div>
-
 <header class="site-header" id="header">
   <div class="container header-inner">
     <a href="#inicio" class="brand">
@@ -25,13 +21,14 @@
     </a>
 
     <nav class="nav" id="nav">
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#galeria">Galería</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#ubicacion">Ubicación</a>
-      <a href="#reservar" class="nav-cta">Reservar</a>
+      <a href="#servicios"><span>01</span>Servicios</a>
+      <a href="#nosotros"><span>02</span>Nosotros</a>
+      <a href="#galeria"><span>03</span>Galería</a>
+      <a href="#testimonios"><span>04</span>Testimonios</a>
+      <a href="#ubicacion"><span>05</span>Ubicación</a>
     </nav>
+
+    <a href="#reservar" class="nav-cta">Reservar</a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -43,73 +40,89 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <img src="assets/logo.svg" alt="" class="hero-logo" aria-hidden="true">
-      <p class="eyebrow">Barbería &amp; Coffee Bar</p>
-      <h1>Estilo clásico,<br>buena charla y mejor café.</h1>
-      <p class="hero-copy">Cortes de precisión, afeitados a la antigua y un espacio pensado para que salgas mejor de lo que entraste. Todo con un café en la mano.</p>
-      <div class="hero-actions">
-        <a href="#reservar" class="btn btn-primary">Reservar mi hora</a>
-        <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+      <div class="hero-copy-col">
+        <p class="eyebrow"><span class="dot"></span> Barbería &amp; Coffee Bar</p>
+        <h1>Corte<br>afilado.<br><em>Café</em><br>en mano.</h1>
+        <p class="hero-copy">Cortes de precisión, afeitados a la antigua y un espacio pensado para que salgas mejor de lo que entraste — con un espresso en la mano.</p>
+        <div class="hero-actions">
+          <a href="#reservar" class="btn btn-primary">Reservar mi hora <span>→</span></a>
+          <a href="#servicios" class="btn btn-line">Ver servicios</a>
+        </div>
+      </div>
+
+      <div class="hero-badge-col">
+        <div class="hero-badge">
+          <div class="hero-badge-ring"></div>
+          <img src="assets/logo.svg" alt="Coffees & Barbers Co." class="hero-logo">
+        </div>
+        <div class="hero-stat">
+          <strong>7+</strong>
+          <span>años cortando<br>y sirviendo café</span>
+        </div>
       </div>
     </div>
-    <a href="#servicios" class="scroll-cue" aria-label="Bajar a servicios"><span></span></a>
+
+    <a href="#servicios" class="scroll-cue" aria-label="Bajar a servicios">
+      <span class="scroll-cue-line"></span> Scroll
+    </a>
   </section>
 
   <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>CORTES CLÁSICOS</span><span>·</span><span>AFEITADO A NAVAJA</span><span>·</span>
-      <span>DISEÑO DE BARBA</span><span>·</span><span>BUEN CAFÉ</span><span>·</span>
-      <span>CORTES CLÁSICOS</span><span>·</span><span>AFEITADO A NAVAJA</span><span>·</span>
-      <span>DISEÑO DE BARBA</span><span>·</span><span>BUEN CAFÉ</span><span>·</span>
+      <span>CORTES CLÁSICOS</span><span class="dot-sep">●</span><span>AFEITADO A NAVAJA</span><span class="dot-sep">●</span>
+      <span>DISEÑO DE BARBA</span><span class="dot-sep">●</span><span>BUEN CAFÉ</span><span class="dot-sep">●</span>
+      <span>CORTES CLÁSICOS</span><span class="dot-sep">●</span><span>AFEITADO A NAVAJA</span><span class="dot-sep">●</span>
+      <span>DISEÑO DE BARBA</span><span class="dot-sep">●</span><span>BUEN CAFÉ</span><span class="dot-sep">●</span>
     </div>
   </div>
 
   <!-- SERVICIOS -->
   <section class="section" id="servicios">
     <div class="container">
-      <p class="eyebrow center">Lo que hacemos</p>
-      <h2 class="section-title center">Servicios</h2>
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span> Lo que hacemos</p>
+        <h2 class="section-title">Servicios</h2>
+      </div>
 
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-icon">✂️</div>
-          <h3>Corte clásico</h3>
-          <p>Tijera y máquina, adaptado a tu forma de cara y estilo de siempre.</p>
-          <span class="price">$8.000</span>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">🪒</div>
-          <h3>Afeitado a navaja</h3>
-          <p>Toalla caliente, espuma y navaja. La experiencia de barbería tradicional.</p>
-          <span class="price">$7.000</span>
-        </article>
-        <article class="service-card featured">
-          <div class="service-icon">💈</div>
-          <h3>Corte + Barba</h3>
-          <p>Nuestro combo más pedido: corte completo, perfilado de barba y toalla caliente.</p>
-          <span class="price">$12.000</span>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">🧔</div>
-          <h3>Diseño de barba</h3>
-          <p>Perfilado, definición de líneas y tratamiento con aceites.</p>
-          <span class="price">$6.000</span>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">👦</div>
-          <h3>Corte niños</h3>
-          <p>Para los más pequeños de la casa, con toda la paciencia del mundo.</p>
-          <span class="price">$6.000</span>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">☕</div>
-          <h3>Coffee bar</h3>
-          <p>Espresso, cortado o americano de cortesía mientras esperas tu turno.</p>
-          <span class="price">Cortesía</span>
-        </article>
+      <div class="service-list">
+        <a href="#reservar" class="service-row">
+          <span class="service-num">01</span>
+          <span class="service-name">Corte clásico</span>
+          <span class="service-desc">Tijera y máquina, a tu estilo de siempre</span>
+          <span class="service-price">$8.000</span>
+        </a>
+        <a href="#reservar" class="service-row">
+          <span class="service-num">02</span>
+          <span class="service-name">Afeitado a navaja</span>
+          <span class="service-desc">Toalla caliente, espuma y navaja</span>
+          <span class="service-price">$7.000</span>
+        </a>
+        <a href="#reservar" class="service-row featured">
+          <span class="service-num">03</span>
+          <span class="service-name">Corte + Barba</span>
+          <span class="service-desc">Nuestro combo más pedido</span>
+          <span class="service-price">$12.000</span>
+        </a>
+        <a href="#reservar" class="service-row">
+          <span class="service-num">04</span>
+          <span class="service-name">Diseño de barba</span>
+          <span class="service-desc">Perfilado, líneas y aceites</span>
+          <span class="service-price">$6.000</span>
+        </a>
+        <a href="#reservar" class="service-row">
+          <span class="service-num">05</span>
+          <span class="service-name">Corte niños</span>
+          <span class="service-desc">Para los más pequeños de la casa</span>
+          <span class="service-price">$6.000</span>
+        </a>
+        <a href="#reservar" class="service-row">
+          <span class="service-num">06</span>
+          <span class="service-name">Coffee bar</span>
+          <span class="service-desc">Espresso, cortado o americano</span>
+          <span class="service-price">Cortesía</span>
+        </a>
       </div>
     </div>
   </section>
@@ -117,24 +130,24 @@
   <!-- NOSOTROS -->
   <section class="section alt" id="nosotros">
     <div class="container about-grid">
-      <div class="about-visual" aria-hidden="true">
+      <div class="about-copy">
+        <p class="eyebrow"><span class="dot"></span> Nuestra historia</p>
+        <h2 class="section-title">Más que<br>una barbería</h2>
+        <p>En Coffees &amp; Barbers Co. creemos que un buen corte empieza con un buen ambiente. Paredes verde salvia, sillones de cuero y el aroma a café recién hecho de fondo: así es como te atendemos.</p>
+        <p>Nuestro equipo combina técnica clásica con tendencias actuales, para que salgas exactamente como querías, ni un milímetro de más.</p>
+
+        <ul class="about-list">
+          <li><span>01</span> Barberos con más de 8 años de experiencia</li>
+          <li><span>02</span> Café de cortesía en cada visita</li>
+          <li><span>03</span> Productos premium para barba y cabello</li>
+          <li><span>04</span> Reserva online o por WhatsApp en minutos</li>
+        </ul>
+      </div>
+
+      <div class="about-visual">
         <div class="about-swatch">
           <img src="assets/logo.svg" alt="" class="about-logo">
         </div>
-      </div>
-      <div class="about-copy">
-        <p class="eyebrow">Nuestra historia</p>
-        <h2 class="section-title">Más que una barbería</h2>
-        <p>En Coffees &amp; Barbers Co. creemos que un buen corte empieza con un buen ambiente. Paredes verde salvia, sillones de cuero y el aroma a café recién hecho de fondo: así es como te atendemos.</p>
-        <p>Nuestro equipo de barberos combina técnica clásica con tendencias actuales, para que salgas exactamente como querías, ni un milímetro de más.</p>
-
-        <ul class="about-list">
-          <li><span>✓</span> Barberos con más de 8 años de experiencia</li>
-          <li><span>✓</span> Café de cortesía en cada visita</li>
-          <li><span>✓</span> Productos premium para el cuidado de barba y cabello</li>
-          <li><span>✓</span> Reserva online o por WhatsApp en minutos</li>
-        </ul>
-
         <div class="stats">
           <div><strong>7+</strong><span>años de trayectoria</span></div>
           <div><strong>4</strong><span>barberos expertos</span></div>
@@ -145,36 +158,38 @@
   </section>
 
   <!-- GALERIA -->
-  <section class="section" id="galeria">
-    <div class="container">
-      <p class="eyebrow center">Nuestro espacio</p>
-      <h2 class="section-title center">Galería</h2>
+  <section class="section section-bleed" id="galeria">
+    <div class="section-head container">
+      <p class="eyebrow"><span class="dot"></span> Nuestro espacio</p>
+      <h2 class="section-title">Galería</h2>
+    </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-item tall">
-          <div class="gallery-fill fill-1"><span>Sala principal</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-fill fill-2"><span>Estaciones de corte</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-fill fill-3"><span>Coffee bar</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-fill fill-4"><span>Productos</span></div>
-        </div>
-        <div class="gallery-item tall">
-          <div class="gallery-fill fill-5"><span>Detalles</span></div>
-        </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <div class="gallery-fill fill-1"><span>Sala principal</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-fill fill-2"><span>Estaciones de corte</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-fill fill-3"><span>Coffee bar</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-fill fill-4"><span>Productos</span></div>
+      </div>
+      <div class="gallery-item tall">
+        <div class="gallery-fill fill-5"><span>Detalles</span></div>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIOS -->
-  <section class="section alt" id="testimonios">
+  <section class="section testimonials-section" id="testimonios">
     <div class="container">
-      <p class="eyebrow center">Lo que dicen</p>
-      <h2 class="section-title center">Testimonios</h2>
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span> Lo que dicen</p>
+        <h2 class="section-title">Testimonios</h2>
+      </div>
 
       <div class="testimonials-grid">
         <blockquote class="testimonial">
@@ -194,11 +209,11 @@
   </section>
 
   <!-- UBICACION -->
-  <section class="section" id="ubicacion">
+  <section class="section alt" id="ubicacion">
     <div class="container location-grid">
       <div>
-        <p class="eyebrow">Visítanos</p>
-        <h2 class="section-title">Horario &amp; ubicación</h2>
+        <p class="eyebrow"><span class="dot"></span> Visítanos</p>
+        <h2 class="section-title">Horario &amp;<br>ubicación</h2>
 
         <table class="hours-table">
           <tbody>
@@ -214,7 +229,7 @@
           <p>✉️ hola@coffeesandbarbers.co</p>
         </div>
 
-        <a href="#reservar" class="btn btn-primary">Reservar mi hora</a>
+        <a href="#reservar" class="btn btn-primary">Reservar mi hora <span>→</span></a>
       </div>
 
       <div class="map-placeholder" aria-hidden="true">
@@ -223,11 +238,21 @@
     </div>
   </section>
 
+  <!-- CTA BANDA -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <h2>¿Nos tomamos<br>un café mientras<br>te cortamos el pelo?</h2>
+      <a href="#reservar" class="btn btn-line btn-lg">Reservar mi hora <span>→</span></a>
+    </div>
+  </section>
+
   <!-- RESERVAR -->
-  <section class="section alt" id="reservar">
+  <section class="section" id="reservar">
     <div class="container">
-      <p class="eyebrow center">Agenda tu hora</p>
-      <h2 class="section-title center">Reservar cita</h2>
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span> Agenda tu hora</p>
+        <h2 class="section-title">Reservar cita</h2>
+      </div>
       <p class="section-sub">Completa el formulario y te confirmamos por WhatsApp o correo a la brevedad.</p>
 
       <form class="booking-form" id="bookingForm">
@@ -291,6 +316,9 @@
       <a href="#" aria-label="WhatsApp">WhatsApp</a>
     </div>
   </div>
+
+  <div class="footer-giant" aria-hidden="true">COFFEES &amp; BARBERS</div>
+
   <p class="footer-bottom">© <span id="year"></span> Coffees &amp; Barbers Co. Todos los derechos reservados.</p>
 </footer>
 

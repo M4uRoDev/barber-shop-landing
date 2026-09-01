@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Animación de aparición al hacer scroll
   const revealTargets = document.querySelectorAll(
-    '.service-card, .testimonial, .gallery-item, .about-copy, .about-visual, .location-grid > *, .booking-form'
+    '.service-row, .testimonial, .gallery-item, .about-copy, .about-visual, .location-grid > *, .booking-form'
   );
   revealTargets.forEach((el) => el.classList.add('reveal'));
 
